@@ -2,7 +2,6 @@
   "name": "Trivia.edu",
   "version": "0.0.1",
   "description": "Trivia.Edu ############## The goal behind Trivia Edu is to bring a fun, competitive, and energetic approach to learning in the classroom.  Being able to compete with other students in the subject matter of the teacher will immerse the student in a fun approach of studying.",
-  "main": "gulp.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,16 +16,22 @@
   },
   "homepage": "https://github.com/ZachStoltz/Trivia.edu",
   "dependencies": {
-    "angular": "^1.4.7",
-    "angular-animate": "^1.4.7",
-    "angular-aria": "^1.4.7",
-    "angular-material": "^0.11.4",
     "body-parser": "^1.14.1",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "font-awesome": "^4.4.0",
-    "gulp": "^3.9.0",
+    "history": "^1.17.0",
     "path": "^0.12.7",
-    "ui-router": "^0.2.15"
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.3",
+    "redux": "^3.0.5"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.11",
+    "babel-core": "^5.8.33",
+    "babel-loader": "^5.3.3",
+    "eslint": "^1.8.0",
+    "eslint-plugin-react": "^3.6.3"
   }
 }

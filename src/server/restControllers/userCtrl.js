@@ -1,5 +1,5 @@
 module.exports = function(express){
-  "use strict";
+  'use strict';
   let router = express.Router();
 
   router.get('/', function(req, res){

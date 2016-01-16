@@ -1,53 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
   <head>
-    <style>
-      /* This helps the ng-show/ng-hide animations start at the right place. */
-      /* Since Angular has this but needs to load, this gives us the class early. */
-
-      .ng-hide {
-  'use strict';
-        display: none!important;
-      }
-    </style>
     <title ng-bind="title">TriviaEdu</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/src/client/vendor/angular-material.css" />
     <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css" />
-    <base href="/"
   </head>
   <body>
-    <div layout="column" layout-fill>
-      <div ng-controller="toolbarCtrl as tb">
-        <md-toolbar>
-          <div class="md-toolbar-tools">
-            <md-button class="md-icon-button" ng-click="tb.toggleSideNav()">
-              <i class="fa fa-bars"></i>
-            </md-button>
-          </div>
-        </md-toolbar>
-      
-      <md-sidenav md-component-id="left" class="md-sidenav-left">
-        <md-content role="navigation">
-        </md-content>
-      </md-sidenav>
-        </div>
-      <md-progress-circular style="display:none;" md-mode="indeterminate"></md-progress-circular>
-      <div ui-view layout-margin></div>
-    </div>
-    
-    <!-- Vendor Scripts -->
-    <script src="/src/client/vendor/angular.js"></script>
-    <script src="/src/client/vendor/angular-animate.js"></script>
-    <script src="/src/client/vendor/angular-aria.js"></script>
-    <script src="/src/client/vendor/angular-material.js"></script>
-    <script src="/src/client/vendor/angular-ui-router.js"></script>
-    <!--Application -->
-    <script src="/src/client/app/app.js"></script>
-    <script src="/src/client/app/layout/toolbar.ctrl.js"></script>
-    <!--Dashboard Module -->
-    <script src="/src/client/app/dashboard/dashboard.ctrl.js"></script>
-  </body
+    <div id="app"></div>
+
+    <script src="/src/client/dist/app-compiled.js"></script> 
+  </body>
 </html>

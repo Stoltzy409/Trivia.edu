@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
-app.use(baseAPIUrl + '/question', require('./restControllers/questionCtrl')(express));
-app.use(baseAPIUrl + '/user', require('./restControllers/userCtrl')(express));
+app.use(baseAPIUrl + '/questions', require('./restControllers/questionCtrl')(express));
+app.use(baseAPIUrl + '/users', require('./restControllers/userCtrl')(express));
 
 app.get('/', function (req, res) {
   res.render('index');
